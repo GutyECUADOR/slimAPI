@@ -1,6 +1,6 @@
 {
-    "name": "slim/slim-skeleton",
-    "description": "A Slim Framework skeleton application for rapid development",
+    "name": "vidiasoft/slim",
+    "description": "Proyecto de API rest con slim",
     "keywords": [
         "microframework",
         "rest",
@@ -10,6 +10,10 @@
     "homepage": "http://github.com/slimphp/Slim-Skeleton",
     "license": "MIT",
     "authors": [
+        {
+            "name": "Jose Gutierrez",
+            "email": "gutiecuador@gmail.com"
+        },
         {
             "name": "Josh Lockhart",
             "email": "info@joshlockhart.com",

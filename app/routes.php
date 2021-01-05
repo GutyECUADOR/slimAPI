@@ -15,12 +15,17 @@ return function (App $app) {
     });
 
     $app->get('/', function (Request $request, Response $response) {
-        $response->getBody()->write('Hello world!');
+        $response->getBody()->write('Hola mundo!');
         return $response;
     });
 
-    $app->group('/users', function (Group $group) {
-        $group->get('', ListUsersAction::class);
+    $app->get('/multinivel', function (Request $request, Response $response) {
+        $response->getBody()->write('respuesta de multinivel');
+        return $response;
+    });
+
+    $app->group('/usuarios', function (Group $group) {
+        $group->get('/', ListUsersAction::class);
         $group->get('/{id}', ViewUserAction::class);
     });
 };
